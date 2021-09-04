@@ -8,7 +8,6 @@ function getPosition(event) {
   const range = ranges.value;
   const start = event.target.value;
   const page = event.target.dataset.page;
-  console.log(start);
   mapLink.href = "";
   mapLink.textContent = "";
 
