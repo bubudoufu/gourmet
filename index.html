@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="https://webservice.recruit.co.jp/"><img src="https://webservice.recruit.co.jp/banner/hotpepper-s.gif" alt="ホットペッパー Webサービス" width="135" height="17" border="0" title="ホットペッパー Webサービス"></a>
+    <h1>現在地を取得しグルメサーチAPIを利用して近隣のお店を表示します。</h1>
+    <div class="top">
+        <form>
+            <label for="ranges">検索範囲</label>
+            <select id="ranges">
+                <option value="1">300m</option>
+                <option value="2">500m</option>
+                <option value="3">1000m </option>
+                <option value="4">2000m </option>
+                <option value="5">3000m </option>
+            </select>
+        </form>
+        <button value="1" data-page="1">現在地取得</button><br />
+    </div>
+    <p class="status"></p>
+    <a class="map-link" target="_blank" rel="noopener"></a>
+    <h2></h2>
+    <p class="page"></p>
+    <span></span>
+    <div class="next"></div>
+    <div class="main"></div>
+    <template id="template">
+        <ul>
+            <li class="name"><a class="shop"></a></li>
+            <li class="access"><a class="map"></a></li>
+            <li class="average"></li>
+            <li class="open"></li>
+        </ul>
+    </template>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
