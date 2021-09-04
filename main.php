@@ -6,12 +6,12 @@ $range = $_POST['range'];
 $start = $_POST['start'];
 // クエリをまとめる
 $query = [
-    'key' => 'アプリケーションID',// <-- ここにあなたのアプリケーションIDを設定してください。
-    'lat' => $latitude,
-    'lng' => $longitude,
-    'range' => $range,
-    'start' => $start,
-    'format' => 'json',
+    'key' => 'APIキー', // <-- ここにあなたのAPIキーを設定してください。
+    'lat' => $latitude, // 緯度
+    'lng' => $longitude, // 経度
+    'range' => $range, // 検索範囲
+    'start' => $start, // 検索の開始位置
+    'format' => 'json', // レスポンス形式
 ];
 // グルメサーチAPIからjsonを取得
 $url = 'https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?';
