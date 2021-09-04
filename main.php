@@ -6,7 +6,7 @@ $range = $_POST['range'];
 $start = $_POST['start'];
 // クエリをまとめる
 $query = [
-    'key' => '4824e0fda3dafb68',
+    'key' => 'アプリケーションID',// <-- ここにあなたのアプリケーションIDを設定してください。
     'lat' => $latitude,
     'lng' => $longitude,
     'range' => $range,
